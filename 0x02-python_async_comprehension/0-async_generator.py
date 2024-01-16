@@ -8,7 +8,7 @@ import random
 from typing import Generator
 
 
-async def async_generator() -> Generator[float, None]:
+async def async_generator() -> Generator[float, None, None]:
     """Yields a random integer between 1 and 10"""
     for i in range(10):
         yield random.uniform(0, 10)
